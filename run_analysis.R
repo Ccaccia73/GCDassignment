@@ -18,5 +18,7 @@ y.test.DataFile = "/y_test.txt"
 X.train.DataFile = "/X_train.txt"
 y.train.DataFile = "/y_train.txt"
 
+Xtrain<-read.table(paste(c(data.dir, train.dir, X.train.DataFile), collapse=''))
 Xtest<-read.table(paste(c(data.dir, test.dir, X.test.DataFile), collapse=''))
-#Xtr<-read.table(paste(c(data.dir, train.dir, X.train.DataFile), collapse=''), sep=" " )
+
+Xall<-rbind(Xtrain,Xtest)
