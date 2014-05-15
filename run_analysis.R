@@ -22,6 +22,7 @@ train.SubjectFile = "/subject_train.txt"
 test.SubjectFile = "/subject_test.txt"
 
 features.DataFile = "/features.txt"
+activity_labels.DataFile = "/activity_labels.txt"
 
 # Part 1
 
@@ -48,6 +49,20 @@ meanStd.ID <- subset(features.ID,grepl("mean|std", features.ID[ ,2]))
 MeanStd.Data <- Xall[,meanStd.ID[ ,1] ]
 
 Data.all<-cbind(MeanStd.Data,Activity.ID,Subj.all)
+
+# Part 3
+
+activity.labels <- read.table(paste(c(data.dir, activity_labels.DataFile), collapse=''))
+
+Data.all.labels <- factor(Data.all[, 80], levels = activity.labels[,1], labels = activity.labels[,2])
+
+Data.all[, 80]<-Data.all.labels 
+
+# Part 4
+
+names(Data.all) <- c(as.character(meanStd.ID[,2]),"Activity", "Subject")
+
+# Part 5
 
 
 
