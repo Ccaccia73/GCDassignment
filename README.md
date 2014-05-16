@@ -8,8 +8,10 @@ The R script `run_analysis.R` processes the generates data as required in the pr
 
 ## Source
 
-The dataset can be found in: [zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
+The dataset can be found in the following [zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
+Information about used data can be found at: (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 The script requires that the dataset has been unzipped in the same directory (i.e. the dataset root directory is _./UCI HAR Dataset_)
+
 
 ## Library dependencies
 
