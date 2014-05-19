@@ -1,6 +1,6 @@
 # Code Book
 
-------------------------
+===============
 
 ## Data Sources
 
@@ -28,11 +28,11 @@ The script uses the following files of the dataset described in `Readme.md`:
 
 This script performs the following operations:
 
-1.  it merges the training and the test sets in order to produce a single dataset,
-2.	it Extracts only the features concerning mean and standard deviation for a measurement, 
-3.	it uses, as class names, the descriptive values found in the _activity_labels_ file,
-4.	it changes the names of the feaures according to the names found in the _features_ file, 
-5.	it creates a new tidy data set with the average of each variable for each activity and each subject. 
+1.  Merges the training and the test sets in order to produce a single dataset,
+2.	Extracts only the features concerning mean and standard deviation for a measurement, 
+3.	Uses, as class names, the descriptive values found in the _activity_labels_ file,
+4.	Changes the names of the feaures according to the names found in the _features_ file, 
+5.	Creates a new tidy data set with the average of each variable for each activity and each subject. 
 
 ## Output
 
